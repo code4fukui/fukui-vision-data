@@ -1,0 +1,6 @@
+.DS_Store
+
+# Downloaded source PDFs and generated extraction artifacts
+pdf/
+txt/
+tmpimg/
