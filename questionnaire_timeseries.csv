@@ -1,0 +1,160 @@
+indicator_id,indicator_label,fiscal_year,reiwa_year,question_no,denominator,option,score,count,percent,source_pdf_url
+living_fukui,福井県に暮らしてきて良かったと思うか,2019,1,問11,2504,暮らしてきてよかった,,1156,46.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R1_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2019,1,問11,2504,どちらかといえば暮らしてきてよかった,,891,35.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R1_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2019,1,問11,2504,どちらかといえば県外に移り住みたい,,125,5.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R1_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2019,1,問11,2504,県外に移り住みたい,,47,1.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R1_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2019,1,問11,2504,わからない,,158,6.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R1_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2019,1,問11,2504,未記入・無効等,,127,5.1,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R1_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2020,2,問12,1625,暮らしてきてよかった,,794,48.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R2_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2020,2,問12,1625,どちらかといえば暮らしてきてよかった,,612,37.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R2_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2020,2,問12,1625,どちらかといえば県外に移り住みたい,,82,5.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R2_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2020,2,問12,1625,県外に移り住みたい,,20,1.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R2_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2020,2,問12,1625,わからない,,108,6.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R2_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2020,2,問12,1625,未記入・無効等,,9,0.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R2_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2021,3,問12,1686,暮らしてきてよかった,,829,49.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R3_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2021,3,問12,1686,どちらかといえば暮らしてきてよかった,,666,39.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R3_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2021,3,問12,1686,どちらかといえば県外に移り住みたい,,67,4.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R3_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2021,3,問12,1686,県外に移り住みたい,,29,1.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R3_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2021,3,問12,1686,わからない,,78,4.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R3_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2021,3,問12,1686,未記入・無効等,,17,1.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R3_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2022,4,問10,1571,暮らしてきてよかった,,735,46.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2022,4,問10,1571,どちらかといえば暮らしてきてよかった,,582,37.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2022,4,問10,1571,どちらかといえば県外に移り住みたい,,117,7.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2022,4,問10,1571,県外に移り住みたい,,26,1.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2022,4,問10,1571,わからない,,82,5.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2022,4,問10,1571,未記入・無効等,,29,1.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2023,5,問6,1552,暮らしてきてよかった,,734,47.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2023,5,問6,1552,どちらかといえば暮らしてきてよかった,,623,40.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2023,5,問6,1552,どちらかといえば県外に移り住みたい,,92,5.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2023,5,問6,1552,県外に移り住みたい,,22,1.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2023,5,問6,1552,わからない,,81,5.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2024,6,問3,1673,暮らしてきてよかった,,707,42.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2024,6,問3,1673,どちらかといえば暮らしてきてよかった,,695,41.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2024,6,問3,1673,どちらかといえば県外に移り住みたい,,154,9.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2024,6,問3,1673,県外に移り住みたい,,34,2.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2024,6,問3,1673,わからない,,83,5.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2025,7,問2,1571,暮らしてきてよかった,,697,44.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2025,7,問2,1571,どちらかといえば暮らしてきてよかった,,659,41.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2025,7,問2,1571,どちらかといえば県外に移り住みたい,,131,8.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2025,7,問2,1571,県外に移り住みたい,,25,1.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+living_fukui,福井県に暮らしてきて良かったと思うか,2025,7,問2,1571,わからない,,59,3.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,0点,0,4,0.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,1点,1,7,0.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,2点,2,14,0.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,3点,3,27,1.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,4点,4,55,3.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,5点,5,197,12.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,6点,6,201,12.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,7点,7,342,21.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,8点,8,426,27.1,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,9点,9,156,9.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,10点,10,122,7.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2022,4,問13,1571,未記入・無効等,,20,1.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,0点,0,24,1.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,1点,1,6,0.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,2点,2,11,0.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,3点,3,36,2.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,4点,4,43,2.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,5点,5,213,13.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,6点,6,181,11.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,7点,7,375,24.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,8点,8,374,23.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,9点,9,152,9.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2023,5,問8,1565,10点,10,150,9.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,0点,0,5,0.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,1点,1,5,0.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,2点,2,18,1.1,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,3点,3,51,3.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,4点,4,53,3.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,5点,5,272,16.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,6点,6,198,11.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,7点,7,343,20.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,8点,8,426,25.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,9点,9,128,7.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2024,6,問5,1674,10点,10,175,10.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,0点,0,6,0.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,1点,1,3,0.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,2点,2,11,0.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,3点,3,38,2.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,4点,4,64,4.1,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,5点,5,259,16.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,6点,6,153,9.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,7点,7,334,21.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,8点,8,381,24.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,9点,9,119,7.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+happiness_current,現在どの程度幸せか（0-10点）,2025,7,問4,1557,10点,10,189,12.1,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2022,4,問14(1),1571,1点,1,51,3.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2022,4,問14(1),1571,2点,2,156,9.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2022,4,問14(1),1571,3点,3,657,41.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2022,4,問14(1),1571,4点,4,481,30.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2022,4,問14(1),1571,5点,5,201,12.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2022,4,問14(1),1571,未記入・無効等,,25,1.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2023,5,問9(1),1546,1点,1,73,4.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2023,5,問9(1),1546,2点,2,154,10.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2023,5,問9(1),1546,3点,3,620,40.1,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2023,5,問9(1),1546,4点,4,447,28.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2023,5,問9(1),1546,5点,5,252,16.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2024,6,問7,1679,1点,1,61,3.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2024,6,問7,1679,2点,2,170,10.1,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2024,6,問7,1679,3点,3,730,43.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2024,6,問7,1679,4点,4,512,30.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2024,6,問7,1679,5点,5,206,12.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2025,7,問7(1),1545,1点,1,69,4.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2025,7,問7(1),1545,2点,2,147,9.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2025,7,問7(1),1545,3点,3,596,38.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2025,7,問7(1),1545,4点,4,505,32.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+place_to_belong,住んでいる地域に自分の居場所があると感じるか（1-5点）,2025,7,問7(1),1545,5点,5,228,14.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2022,4,問14(2),1571,1点,1,200,12.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2022,4,問14(2),1571,2点,2,359,22.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2022,4,問14(2),1571,3点,3,667,42.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2022,4,問14(2),1571,4点,4,256,16.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2022,4,問14(2),1571,5点,5,68,4.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2022,4,問14(2),1571,未記入・無効等,,21,1.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2023,5,問9(2),1545,1点,1,215,13.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2023,5,問9(2),1545,2点,2,337,21.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2023,5,問9(2),1545,3点,3,673,43.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2023,5,問9(2),1545,4点,4,232,15.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2023,5,問9(2),1545,5点,5,89,5.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2024,6,問8,1675,1点,1,157,9.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2024,6,問8,1675,2点,2,395,23.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2024,6,問8,1675,3点,3,756,45.1,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2024,6,問8,1675,4点,4,292,17.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2024,6,問8,1675,5点,5,75,4.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2025,7,問8(1),1516,1点,1,242,16.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2025,7,問8(1),1516,2点,2,354,23.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2025,7,問8(1),1516,3点,3,612,40.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2025,7,問8(1),1516,4点,4,235,15.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+active_stage,住んでいる地域に自己表現・活躍できる場があると感じるか（1-5点）,2025,7,問8(1),1516,5点,5,73,4.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2023,5,問9(3),1547,1点,1,108,7.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2023,5,問9(3),1547,2点,2,222,14.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2023,5,問9(3),1547,3点,3,526,34.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2023,5,問9(3),1547,4点,4,464,30.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2023,5,問9(3),1547,5点,5,227,14.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2024,6,問9,1678,1点,1,81,4.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2024,6,問9,1678,2点,2,192,11.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2024,6,問9,1678,3点,3,617,36.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2024,6,問9,1678,4点,4,571,34.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2024,6,問9,1678,5点,5,217,12.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2025,7,問10,1550,1点,1,71,4.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2025,7,問10,1550,2点,2,198,12.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2025,7,問10,1550,3点,3,619,39.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2025,7,問10,1550,4点,4,482,31.1,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+regional_pride,住んでいる地域に愛着や誇りを感じるか（1-5点）,2025,7,問10,1550,5点,5,180,11.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+work_wellbeing_joy,仕事のWell-being: 日々の仕事に喜びや楽しみを感じるか,2024,6,問13(1),1270,はい,,755,59.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+work_wellbeing_joy,仕事のWell-being: 日々の仕事に喜びや楽しみを感じるか,2024,6,問13(1),1270,いいえ,,259,20.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+work_wellbeing_joy,仕事のWell-being: 日々の仕事に喜びや楽しみを感じるか,2024,6,問13(1),1270,わからない,,256,20.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+work_wellbeing_joy,仕事のWell-being: 日々の仕事に喜びや楽しみを感じるか,2025,7,問13(1),1142,はい,,679,59.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+work_wellbeing_joy,仕事のWell-being: 日々の仕事に喜びや楽しみを感じるか,2025,7,問13(1),1142,いいえ,,242,21.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+work_wellbeing_joy,仕事のWell-being: 日々の仕事に喜びや楽しみを感じるか,2025,7,問13(1),1142,わからない,,221,19.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+work_wellbeing_contribution,仕事のWell-being: 自分の仕事が人々の生活をより良くすることにつながっていると思うか,2024,6,問13(2),1266,はい,,898,70.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+work_wellbeing_contribution,仕事のWell-being: 自分の仕事が人々の生活をより良くすることにつながっていると思うか,2024,6,問13(2),1266,いいえ,,111,8.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+work_wellbeing_contribution,仕事のWell-being: 自分の仕事が人々の生活をより良くすることにつながっていると思うか,2024,6,問13(2),1266,わからない,,257,20.3,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+work_wellbeing_contribution,仕事のWell-being: 自分の仕事が人々の生活をより良くすることにつながっていると思うか,2025,7,問13(2),1162,はい,,830,71.4,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+work_wellbeing_contribution,仕事のWell-being: 自分の仕事が人々の生活をより良くすることにつながっていると思うか,2025,7,問13(2),1162,いいえ,,112,9.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+work_wellbeing_contribution,仕事のWell-being: 自分の仕事が人々の生活をより良くすることにつながっていると思うか,2025,7,問13(2),1162,わからない,,220,18.9,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+work_wellbeing_choice,仕事のWell-being: 自分の仕事や働き方を多くの選択肢から選べる状態か,2024,6,問13(3),1267,はい,,504,39.8,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+work_wellbeing_choice,仕事のWell-being: 自分の仕事や働き方を多くの選択肢から選べる状態か,2024,6,問13(3),1267,いいえ,,551,43.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+work_wellbeing_choice,仕事のWell-being: 自分の仕事や働き方を多くの選択肢から選べる状態か,2024,6,問13(3),1267,わからない,,212,16.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf
+work_wellbeing_choice,仕事のWell-being: 自分の仕事や働き方を多くの選択肢から選べる状態か,2025,7,問13(3),1155,はい,,473,41.0,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+work_wellbeing_choice,仕事のWell-being: 自分の仕事や働き方を多くの選択肢から選べる状態か,2025,7,問13(3),1155,いいえ,,492,42.6,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf
+work_wellbeing_choice,仕事のWell-being: 自分の仕事や働き方を多くの選択肢から選べる状態か,2025,7,問13(3),1155,わからない,,190,16.5,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf

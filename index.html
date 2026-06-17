@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>福井県長期ビジョン県民アンケート 時系列グラフ</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #1b2430;
+      --muted: #667085;
+      --line: #d9dee7;
+      --accent: #0f766e;
+      --accent-2: #2563eb;
+      --warn: #c2410c;
+      --good: #15803d;
+      --shadow: 0 10px 28px rgba(22, 33, 54, .08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .top {
+      padding: 28px 0 22px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: clamp(24px, 3vw, 38px);
+      letter-spacing: 0;
+      line-height: 1.2;
+    }
+
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+    }
+
+    .source-link {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    main {
+      padding: 22px 0 38px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: #ffffff;
+      padding: 18px 0 24px;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.4fr) minmax(170px, .75fr) minmax(170px, .75fr);
+      gap: 12px;
+      align-items: end;
+      margin-bottom: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    select {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: #fff;
+      color: var(--text);
+      padding: 0 12px;
+      font: inherit;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 14px 0;
+    }
+
+    .stat, .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .stat {
+      padding: 14px 16px;
+      min-width: 0;
+    }
+
+    .stat .label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .stat .value {
+      margin-top: 4px;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .stat .sub {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .panel {
+      padding: 18px;
+      margin-top: 14px;
+    }
+
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    .note {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .chart-box {
+      width: 100%;
+      overflow: auto;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-width: 760px;
+    }
+
+    .grid-line {
+      stroke: #e7ebf1;
+      stroke-width: 1;
+    }
+
+    .axis-label {
+      fill: #667085;
+      font-size: 12px;
+    }
+
+    .line {
+      fill: none;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .dot {
+      stroke: #fff;
+      stroke-width: 2;
+    }
+
+    .bar-label {
+      fill: #1f2937;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      margin-top: 8px;
+      color: #344054;
+      font-size: 13px;
+    }
+
+    .legend span {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      display: inline-block;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 14px;
+      align-items: start;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #edf0f4;
+      padding: 9px 8px;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    th:first-child, td:first-child,
+    th:nth-child(2), td:nth-child(2) {
+      text-align: left;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      background: #fafbfc;
+      position: sticky;
+      top: 0;
+    }
+
+    .table-wrap {
+      max-height: 430px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .overview {
+      display: grid;
+      gap: 9px;
+    }
+
+    .year-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    .year-card strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .year-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .year-card a {
+      display: inline-block;
+      margin-top: 6px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .tooltip {
+      position: fixed;
+      z-index: 5;
+      max-width: 280px;
+      pointer-events: none;
+      background: rgba(17, 24, 39, .94);
+      color: #fff;
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 12px;
+      opacity: 0;
+      transform: translate(-50%, -110%);
+      transition: opacity .08s ease;
+    }
+
+    @media (max-width: 900px) {
+      .toolbar,
+      .summary,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .panel {
+        padding: 14px;
+      }
+
+      .source-link {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <div>
+        <h1>福井県長期ビジョン県民アンケート</h1>
+        <p class="lead">令和元年度から令和7年度までの調査概要と主要設問の推移</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="toolbar" aria-label="表示設定">
+      <label>
+        指標
+        <select id="indicatorSelect"></select>
+      </label>
+      <label>
+        表示
+        <select id="viewSelect">
+          <option value="positive">肯定的な回答・高スコアの合計</option>
+          <option value="average">平均スコア</option>
+          <option value="option">選択肢別割合</option>
+        </select>
+      </label>
+      <label>
+        選択肢
+        <select id="optionSelect"></select>
+      </label>
+    </section>
+
+    <section class="summary" id="summary"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2 id="chartTitle"></h2>
+          <p class="note" id="chartNote"></p>
+        </div>
+      </div>
+      <div class="chart-box">
+        <svg id="lineChart" viewBox="0 0 940 430" role="img" aria-label="時系列グラフ"></svg>
+      </div>
+      <div class="legend" id="legend"></div>
+    </section>
+
+    <section class="split">
+      <div class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>年度別内訳</h2>
+            <p class="note">各年度PDFに記載された件数と割合</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>年度</th>
+                <th>選択肢</th>
+                <th>件数</th>
+                <th>割合</th>
+                <th>分母</th>
+              </tr>
+            </thead>
+            <tbody id="detailBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <aside class="panel">
+        <div class="panel-head">
+          <div>
+            <h2>調査概要</h2>
+            <p class="note">令和元年度から令和7年度</p>
+          </div>
+        </div>
+        <div class="overview" id="overview"></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <nav class="links" aria-label="出典とCSVデータ">
+        <a class="source-link" href="survey_overview.csv" download>調査概要CSV</a>
+        <a class="source-link" href="questionnaire_timeseries.csv" download>時系列CSV</a>
+        <a class="source-link" href="https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire.html" target="_blank" rel="noreferrer">福井県の出典ページ</a>
+        <a class="source-link" href="https://github.com/code4fukui/fukui-vision-data/" target="_blank" rel="noreferrer">ソース</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="tooltip" id="tooltip"></div>
+
+  <script type="text/plain" id="fallback-overview">fiscal_year,reiwa_year,calendar_year,survey_target,target_count,method,period_start,period_end,response_count,response_rate_percent,result_pdf_url,summary_pdf_url,source_page_url
+2019,1,2019,県内に居住する満18歳以上,5000,郵送,2019-08-29,2019-09-12,2504,50.08,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R1_kekka.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R1_gaiyou.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire.html
+2020,2,2020,県内に居住する満18歳以上,3000,郵送,2020-10-22,2020-11-05,1625,54.17,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R2_kekka.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R2_gaiyou.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire.html
+2021,3,2021,県内に居住する満18歳以上,3000,郵送,2021-10-25,2021-11-15,1686,56.2,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R3_kekka.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R3_gaiyou.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire.html
+2022,4,2022,県内に居住する満18歳以上,3000,郵送およびWEB,2022-10-28,2022-11-18,1571,52.37,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_kekka.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R4_gaiyou.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire.html
+2023,5,2023,県内に居住する満18歳以上,3219,郵送およびWEB,2023-07-26,2023-08-21,1583,49.18,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_kekka.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R5_gaiyou.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire.html
+2024,6,2024,県内に居住する満18歳以上,3184,郵送およびWEB,2024-07-05,2024-07-26,1710,53.7,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_kekka.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R6_gaiyou.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire.html
+2025,7,2025,県内に居住する満18歳以上,3208,郵送およびWEB,2025-08-27,2025-09-22,1575,49.1,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_kekka.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R7_gaiyou.pdf,https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire.html</script>
+
+  <script>
+    const indicatorRules = {
+      living_fukui: {
+        label: "福井県に暮らしてきて良かったと思うか",
+        positiveOptions: ["暮らしてきてよかった", "どちらかといえば暮らしてきてよかった"],
+        averageLabel: "満足度スコア",
+        scoreMap: {
+          "暮らしてきてよかった": 5,
+          "どちらかといえば暮らしてきてよかった": 4,
+          "どちらかといえば県外に移り住みたい": 2,
+          "県外に移り住みたい": 1
+        }
+      },
+      happiness_current: {
+        label: "現在どの程度幸せか（0-10点）",
+        positiveScoreMin: 7,
+        averageLabel: "平均点"
+      },
+      place_to_belong: {
+        label: "住んでいる地域に自分の居場所があると感じるか",
+        positiveScoreMin: 4,
+        averageLabel: "平均点"
+      },
+      active_stage: {
+        label: "住んでいる地域に自己表現・活躍できる場があると感じるか",
+        positiveScoreMin: 4,
+        averageLabel: "平均点"
+      },
+      regional_pride: {
+        label: "住んでいる地域に愛着や誇りを感じるか",
+        positiveScoreMin: 4,
+        averageLabel: "平均点"
+      },
+      work_wellbeing_joy: {
+        label: "仕事のWell-being: 日々の仕事に喜びや楽しみを感じるか",
+        positiveOptions: ["はい"]
+      },
+      work_wellbeing_contribution: {
+        label: "仕事のWell-being: 自分の仕事が人々の生活をより良くすることにつながっていると思うか",
+        positiveOptions: ["はい"]
+      },
+      work_wellbeing_choice: {
+        label: "仕事のWell-being: 自分の仕事や働き方を多くの選択肢から選べる状態か",
+        positiveOptions: ["はい"]
+      }
+    };
+
+    const optionColors = ["#0f766e", "#2563eb", "#c2410c", "#7c3aed", "#15803d", "#64748b", "#d97706", "#be123c"];
+    const els = {
+      indicator: document.getElementById("indicatorSelect"),
+      view: document.getElementById("viewSelect"),
+      option: document.getElementById("optionSelect"),
+      summary: document.getElementById("summary"),
+      chartTitle: document.getElementById("chartTitle"),
+      chartNote: document.getElementById("chartNote"),
+      chart: document.getElementById("lineChart"),
+      legend: document.getElementById("legend"),
+      detailBody: document.getElementById("detailBody"),
+      overview: document.getElementById("overview"),
+      tooltip: document.getElementById("tooltip")
+    };
+
+    let overviewRows = [];
+    let seriesRows = [];
+
+    async function loadText(path, fallbackId) {
+      try {
+        if (location.protocol !== "file:") {
+          const res = await fetch(path);
+          if (res.ok) return await res.text();
+        }
+      } catch (error) {
+        console.warn(`${path} をCSVから読めませんでした。埋め込みデータを使います。`, error);
+      }
+      if (fallbackId) return document.getElementById(fallbackId).textContent.trim();
+      return "";
+    }
+
+    function parseCsv(text) {
+      const rows = [];
+      let row = [];
+      let value = "";
+      let quoted = false;
+      for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+        const next = text[i + 1];
+        if (quoted) {
+          if (c === '"' && next === '"') {
+            value += '"';
+            i++;
+          } else if (c === '"') {
+            quoted = false;
+          } else {
+            value += c;
+          }
+        } else if (c === '"') {
+          quoted = true;
+        } else if (c === ",") {
+          row.push(value);
+          value = "";
+        } else if (c === "\n") {
+          row.push(value);
+          rows.push(row);
+          row = [];
+          value = "";
+        } else if (c !== "\r") {
+          value += c;
+        }
+      }
+      if (value || row.length) {
+        row.push(value);
+        rows.push(row);
+      }
+      const headers = rows.shift() || [];
+      return rows
+        .filter((r) => r.some(Boolean))
+        .map((r) => Object.fromEntries(headers.map((h, i) => [h, r[i] ?? ""])));
+    }
+
+    function csvEscape(value) {
+      const s = String(value ?? "");
+      return /[",\n]/.test(s) ? `"${s.replaceAll('"', '""')}"` : s;
+    }
+
+    function fallbackSeriesCsv() {
+      const lines = [
+        "indicator_id,indicator_label,fiscal_year,reiwa_year,question_no,denominator,option,score,count,percent,source_pdf_url"
+      ];
+      const add = (indicator, year, reiwa, q, denom, option, score, count, url) => {
+        const percent = Math.round((count / denom) * 1000) / 10;
+        lines.push([
+          indicator,
+          indicatorRules[indicator].label,
+          year,
+          reiwa,
+          q,
+          denom,
+          option,
+          score ?? "",
+          count,
+          percent,
+          url
+        ].map(csvEscape).join(","));
+      };
+      const url = (r) => `https://www.pref.fukui.lg.jp/doc/seiki/vision2019/pre_questionnaire_d/fil/R${r}_kekka.pdf`;
+      [
+        [2019, 1, "問11", 2504, [1156, 891, 125, 47, 158, 127]],
+        [2020, 2, "問12", 1625, [794, 612, 82, 20, 108, 9]],
+        [2021, 3, "問12", 1686, [829, 666, 67, 29, 78, 17]],
+        [2022, 4, "問10", 1571, [735, 582, 117, 26, 82, 29]],
+        [2023, 5, "問6", 1552, [734, 623, 92, 22, 81, 0]],
+        [2024, 6, "問3", 1673, [707, 695, 154, 34, 83, 0]],
+        [2025, 7, "問2", 1571, [697, 659, 131, 25, 59, 0]]
+      ].forEach(([year, reiwa, q, denom, counts]) => {
+        ["暮らしてきてよかった", "どちらかといえば暮らしてきてよかった", "どちらかといえば県外に移り住みたい", "県外に移り住みたい", "わからない", "未記入・無効等"]
+          .forEach((option, i) => counts[i] && add("living_fukui", year, reiwa, q, denom, option, "", counts[i], url(reiwa)));
+      });
+      const scoreSets = {
+        happiness_current: [
+          [2022, 4, "問13", 1571, [4, 7, 14, 27, 55, 197, 201, 342, 426, 156, 122]],
+          [2023, 5, "問8", 1565, [24, 6, 11, 36, 43, 213, 181, 375, 374, 152, 150]],
+          [2024, 6, "問5", 1674, [5, 5, 18, 51, 53, 272, 198, 343, 426, 128, 175]],
+          [2025, 7, "問4", 1557, [6, 3, 11, 38, 64, 259, 153, 334, 381, 119, 189]]
+        ],
+        place_to_belong: [
+          [2022, 4, "問14(1)", 1571, [51, 156, 657, 481, 201]],
+          [2023, 5, "問9(1)", 1546, [73, 154, 620, 447, 252]],
+          [2024, 6, "問7", 1679, [61, 170, 730, 512, 206]],
+          [2025, 7, "問7(1)", 1545, [69, 147, 596, 505, 228]]
+        ],
+        active_stage: [
+          [2022, 4, "問14(2)", 1571, [200, 359, 667, 256, 68]],
+          [2023, 5, "問9(2)", 1545, [215, 337, 673, 232, 89]],
+          [2024, 6, "問8", 1675, [157, 395, 756, 292, 75]],
+          [2025, 7, "問8(1)", 1516, [242, 354, 612, 235, 73]]
+        ],
+        regional_pride: [
+          [2023, 5, "問9(3)", 1547, [108, 222, 526, 464, 227]],
+          [2024, 6, "問9", 1678, [81, 192, 617, 571, 217]],
+          [2025, 7, "問10", 1550, [71, 198, 619, 482, 180]]
+        ]
+      };
+      Object.entries(scoreSets).forEach(([indicator, items]) => {
+        items.forEach(([year, reiwa, q, denom, counts]) => {
+          counts.forEach((count, i) => add(indicator, year, reiwa, q, denom, `${i + (indicator === "happiness_current" ? 0 : 1)}点`, i + (indicator === "happiness_current" ? 0 : 1), count, url(reiwa)));
+        });
+      });
+      return lines.join("\n");
+    }
+
+    function toNumber(value) {
+      const n = Number(value);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function fmtPercent(value) {
+      return `${Number(value).toFixed(1)}%`;
+    }
+
+    function fmtYear(row) {
+      return `R${row.reiwa_year} (${row.fiscal_year})`;
+    }
+
+    function groupBy(rows, key) {
+      return rows.reduce((map, row) => {
+        const k = typeof key === "function" ? key(row) : row[key];
+        if (!map.has(k)) map.set(k, []);
+        map.get(k).push(row);
+        return map;
+      }, new Map());
+    }
+
+    function cleanRows(rows) {
+      return rows.map((r) => ({
+        ...r,
+        fiscal_year: Number(r.fiscal_year),
+        reiwa_year: Number(r.reiwa_year),
+        denominator: Number(r.denominator),
+        score: r.score === "" ? null : Number(r.score),
+        count: Number(r.count),
+        percent: Number(r.percent)
+      }));
+    }
+
+    function initControls() {
+      const indicators = [...new Set(seriesRows.map((r) => r.indicator_id))];
+      els.indicator.innerHTML = indicators.map((id) => `<option value="${id}">${indicatorRules[id]?.label || id}</option>`).join("");
+      els.indicator.value = "living_fukui";
+      els.indicator.addEventListener("change", render);
+      els.view.addEventListener("change", render);
+      els.option.addEventListener("change", render);
+    }
+
+    function currentRows() {
+      return seriesRows
+        .filter((r) => r.indicator_id === els.indicator.value)
+        .sort((a, b) => a.fiscal_year - b.fiscal_year || String(a.option).localeCompare(String(b.option), "ja"));
+    }
+
+    function availableOptions(rows) {
+      return [...new Set(rows.map((r) => r.option))].filter((option) => option !== "未記入・無効等");
+    }
+
+    function syncOptionSelect(rows) {
+      const options = availableOptions(rows);
+      const old = els.option.value;
+      els.option.innerHTML = options.map((option) => `<option value="${option}">${option}</option>`).join("");
+      els.option.disabled = els.view.value !== "option";
+      els.option.value = options.includes(old) ? old : options[0] || "";
+    }
+
+    function positivePercent(rows) {
+      const rule = indicatorRules[els.indicator.value];
+      const byYear = groupBy(rows, "fiscal_year");
+      return [...byYear.entries()].map(([year, items]) => {
+        const denom = items[0].denominator;
+        let count = 0;
+        if (rule.positiveOptions) {
+          count = items.filter((r) => rule.positiveOptions.includes(r.option)).reduce((sum, r) => sum + r.count, 0);
+        } else {
+          count = items.filter((r) => r.score >= rule.positiveScoreMin).reduce((sum, r) => sum + r.count, 0);
+        }
+        return {
+          year: Number(year),
+          reiwa: items[0].reiwa_year,
+          value: (count / denom) * 100,
+          count,
+          denominator: denom,
+          label: "合計"
+        };
+      }).sort((a, b) => a.year - b.year);
+    }
+
+    function averageScore(rows) {
+      const rule = indicatorRules[els.indicator.value];
+      const byYear = groupBy(rows, "fiscal_year");
+      return [...byYear.entries()].map(([year, items]) => {
+        let total = 0;
+        let count = 0;
+        items.forEach((r) => {
+          const score = r.score ?? rule.scoreMap?.[r.option];
+          if (score != null && Number.isFinite(score)) {
+            total += score * r.count;
+            count += r.count;
+          }
+        });
+        return {
+          year: Number(year),
+          reiwa: items[0].reiwa_year,
+          value: total / count,
+          count,
+          denominator: items[0].denominator,
+          label: rule.averageLabel || "平均"
+        };
+      }).filter((p) => Number.isFinite(p.value)).sort((a, b) => a.year - b.year);
+    }
+
+    function optionPercent(rows) {
+      const option = els.option.value;
+      return rows
+        .filter((r) => r.option === option)
+        .map((r) => ({
+          year: r.fiscal_year,
+          reiwa: r.reiwa_year,
+          value: r.percent,
+          count: r.count,
+          denominator: r.denominator,
+          label: option
+        }));
+    }
+
+    function optionSeries(rows) {
+      return availableOptions(rows).map((option, index) => ({
+        label: option,
+        color: optionColors[index % optionColors.length],
+        points: rows
+          .filter((r) => r.option === option)
+          .map((r) => ({
+            year: r.fiscal_year,
+            reiwa: r.reiwa_year,
+            value: r.percent,
+            count: r.count,
+            denominator: r.denominator,
+            label: option
+          }))
+          .sort((a, b) => a.year - b.year)
+      })).filter((series) => series.points.length);
+    }
+
+    function chartSeriesList(rows) {
+      if (els.view.value === "option") return optionSeries(rows);
+      const points = els.view.value === "average" ? averageScore(rows) : positivePercent(rows);
+      const color = els.view.value === "average" ? "var(--accent-2)" : "var(--accent)";
+      const label = els.view.value === "average" ? indicatorRules[els.indicator.value].averageLabel || "平均" : "肯定的回答";
+      return [{ label, color, points }];
+    }
+
+    function drawLineChart(seriesList) {
+      const w = 940;
+      const h = 430;
+      const m = { top: 30, right: 36, bottom: 58, left: 70 };
+      const innerW = w - m.left - m.right;
+      const innerH = h - m.top - m.bottom;
+      const allPoints = seriesList.flatMap((series) => series.points);
+      const years = [...new Set(allPoints.map((p) => p.year))].sort((a, b) => a - b);
+      const minYear = Math.min(...years);
+      const maxYear = Math.max(...years);
+      const maxValue = els.view.value === "average"
+        ? Math.ceil(Math.max(...allPoints.map((p) => p.value), 1) * 10) / 10
+        : 100;
+      const minValue = 0;
+      const x = (year) => m.left + ((year - minYear) / Math.max(maxYear - minYear, 1)) * innerW;
+      const y = (value) => m.top + innerH - ((value - minValue) / (maxValue - minValue || 1)) * innerH;
+      const gridValues = els.view.value === "average"
+        ? Array.from({ length: 6 }, (_, i) => (maxValue / 5) * i)
+        : [0, 20, 40, 60, 80, 100];
+      const selectedOption = els.view.value === "option" ? els.option.value : "";
+      const showValueLabel = (series) => seriesList.length <= 2 || series.label === selectedOption;
+
+      els.chart.innerHTML = `
+        ${gridValues.map((v) => `
+          <line class="grid-line" x1="${m.left}" x2="${w - m.right}" y1="${y(v)}" y2="${y(v)}"></line>
+          <text class="axis-label" x="${m.left - 12}" y="${y(v) + 4}" text-anchor="end">${els.view.value === "average" ? v.toFixed(1) : v}</text>
+        `).join("")}
+        ${years.map((year) => {
+          const point = allPoints.find((p) => p.year === year);
+          return `
+            <line class="grid-line" x1="${x(year)}" x2="${x(year)}" y1="${m.top}" y2="${h - m.bottom}"></line>
+            <text class="axis-label" x="${x(year)}" y="${h - 24}" text-anchor="middle">R${point?.reiwa ?? ""}</text>
+            <text class="axis-label" x="${x(year)}" y="${h - 8}" text-anchor="middle">${year}</text>
+          `;
+        }).join("")}
+        ${seriesList.map((series) => {
+          const path = series.points.map((p, i) => `${i ? "L" : "M"}${x(p.year).toFixed(1)} ${y(p.value).toFixed(1)}`).join(" ");
+          return `<path class="line" d="${path}" stroke="${series.color}"></path>`;
+        }).join("")}
+        ${seriesList.map((series) => series.points.map((p) => `
+          <g class="point" data-tip="R${p.reiwa} (${p.year}) ${series.label}: ${els.view.value === "average" ? p.value.toFixed(2) : fmtPercent(p.value)} / ${p.count.toLocaleString()}件">
+            <circle class="dot" cx="${x(p.year)}" cy="${y(p.value)}" r="5.5" fill="${series.color}"></circle>
+            ${showValueLabel(series) ? `<text class="bar-label" x="${x(p.year)}" y="${y(p.value) - 12}" text-anchor="middle">${els.view.value === "average" ? p.value.toFixed(2) : p.value.toFixed(1) + "%"}</text>` : ""}
+          </g>
+        `).join("")).join("")}
+      `;
+      els.chart.querySelectorAll(".point").forEach((point) => {
+        point.addEventListener("mousemove", showTip);
+        point.addEventListener("mouseleave", hideTip);
+      });
+    }
+
+    function renderSummary(points, rows) {
+      const first = points[0];
+      const last = points[points.length - 1];
+      const diff = last.value - first.value;
+      const max = points.reduce((a, b) => b.value > a.value ? b : a, points[0]);
+      const latestOverview = overviewRows.find((r) => Number(r.fiscal_year) === last.year);
+      const unit = els.view.value === "average" ? "点" : "%";
+      const value = (p) => els.view.value === "average" ? `${p.value.toFixed(2)}点` : fmtPercent(p.value);
+      els.summary.innerHTML = [
+        ["最新値", value(last), `R${last.reiwa} (${last.year})`],
+        ["初回からの変化", `${diff >= 0 ? "+" : ""}${diff.toFixed(1)}${unit}`, `${first.year} から ${last.year}`],
+        ["期間内最高", value(max), `R${max.reiwa} (${max.year})`],
+        ["最新回答者数", `${Number(latestOverview?.response_count || last.denominator).toLocaleString()}人`, latestOverview ? `回答率 ${latestOverview.response_rate_percent}%` : `分母 ${last.denominator.toLocaleString()}`]
+      ].map(([label, val, sub]) => `
+        <div class="stat">
+          <div class="label">${label}</div>
+          <div class="value">${val}</div>
+          <div class="sub">${sub}</div>
+        </div>
+      `).join("");
+    }
+
+    function renderDetails(rows) {
+      els.detailBody.innerHTML = rows.map((r) => `
+        <tr>
+          <td>R${r.reiwa_year} (${r.fiscal_year})</td>
+          <td>${r.option}</td>
+          <td>${r.count.toLocaleString()}</td>
+          <td>${fmtPercent(r.percent)}</td>
+          <td>${r.denominator.toLocaleString()}</td>
+        </tr>
+      `).join("");
+    }
+
+    function renderOverview() {
+      els.overview.innerHTML = overviewRows
+        .sort((a, b) => Number(b.fiscal_year) - Number(a.fiscal_year))
+        .map((r) => `
+          <div class="year-card">
+            <strong>令和${r.reiwa_year}年度 (${r.fiscal_year})</strong>
+            <p>${r.method} / ${r.period_start} - ${r.period_end}</p>
+            <p>対象 ${Number(r.target_count).toLocaleString()}人、回答 ${Number(r.response_count).toLocaleString()}人、回答率 ${r.response_rate_percent}%</p>
+            <a href="${r.result_pdf_url}" target="_blank" rel="noreferrer">調査結果PDF</a>
+          </div>
+        `).join("");
+    }
+
+    function renderLegend(rows) {
+      const seriesList = chartSeriesList(rows);
+      els.legend.innerHTML = seriesList.map((series) => `
+        <span><i class="swatch" style="background:${series.color}"></i>${series.label}</span>
+      `).join("");
+    }
+
+    function render() {
+      const rows = currentRows();
+      const rule = indicatorRules[els.indicator.value];
+      const hasAverage = rows.some((r) => r.score != null || rule.scoreMap?.[r.option] != null);
+      els.view.querySelector('option[value="average"]').disabled = !hasAverage;
+      if (els.view.value === "average" && !hasAverage) {
+        els.view.value = "positive";
+      }
+      syncOptionSelect(rows);
+      const seriesList = chartSeriesList(rows);
+      const points = els.view.value === "option" ? optionPercent(rows) : seriesList[0].points;
+      const viewLabels = {
+        positive: "肯定的な回答・高スコアの合計",
+        average: rule.averageLabel || "平均スコア",
+        option: "選択肢別割合"
+      };
+      els.chartTitle.textContent = `${rule.label} - ${viewLabels[els.view.value]}`;
+      els.chartNote.textContent = els.view.value === "positive"
+        ? "「肯定的」は選択式設問では上位2項目、点数式設問では幸福度7点以上・5点尺度4点以上。"
+        : "割合と件数は各年度PDFの掲載値に基づく。";
+      drawLineChart(seriesList);
+      renderSummary(points, rows);
+      renderDetails(rows);
+      renderLegend(rows);
+      renderOverview();
+    }
+
+    function showTip(event) {
+      els.tooltip.textContent = event.currentTarget.dataset.tip;
+      els.tooltip.style.left = `${event.clientX}px`;
+      els.tooltip.style.top = `${event.clientY}px`;
+      els.tooltip.style.opacity = 1;
+    }
+
+    function hideTip() {
+      els.tooltip.style.opacity = 0;
+    }
+
+    async function start() {
+      const [overviewText, seriesText] = await Promise.all([
+        loadText("survey_overview.csv", "fallback-overview"),
+        loadText("questionnaire_timeseries.csv")
+      ]);
+      overviewRows = parseCsv(overviewText);
+      seriesRows = cleanRows(parseCsv(seriesText || fallbackSeriesCsv()));
+      initControls();
+      render();
+    }
+
+    start();
+  </script>
+</body>
+</html>
